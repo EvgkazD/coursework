@@ -1,6 +1,3 @@
-"""
-Логика игры Пасьянс
-"""
 import random
 
 class Card:

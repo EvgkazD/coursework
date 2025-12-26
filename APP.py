@@ -1,7 +1,7 @@
 import sys
 import time
 import random
-import decimal  # Добавлено для корректной обработки времени из БД
+import decimal
 
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtGui import QFont
@@ -819,19 +819,19 @@ class EasyStrategy(DifficultyStrategy):
         return True
 
     def has_no_hints_left(self, hints_remaining):
-        return False  # Бесконечно
+        return False
 
     def decrement_hints(self, hints_remaining):
-        return hints_remaining  # Не уменьшаем
+        return hints_remaining
 
     def is_infinite_hints(self, hints_remaining):
         return True
 
     def calculate_hint_bonus(self, hints_remaining):
-        return 250  # Фиксированный бонус за бесконечные подсказки
+        return 250
 
     def get_hints_for_db(self, hints_remaining):
-        return -1  # Индикатор бесконечности
+        return -1
 
 
 class MediumStrategy(DifficultyStrategy):
@@ -865,10 +865,9 @@ class HardStrategy(DifficultyStrategy):
         return False
 
     def has_no_hints_left(self, hints_remaining):
-        return True  # Нет подсказок
-
+        return True
     def decrement_hints(self, hints_remaining):
-        return hints_remaining  # Не меняем
+        return hints_remaining
 
     def is_infinite_hints(self, hints_remaining):
         return False
