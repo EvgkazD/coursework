@@ -1,4 +1,10 @@
-.idea
+
+.idea/*
+!.idea/modules.xml
+!.idea/vcs.xml
+!.idea/misc.xml
+!.idea/inspectionProfiles/profiles_settings.xml
+
 
 .apt_generated
 .classpath
